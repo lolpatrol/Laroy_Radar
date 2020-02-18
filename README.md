@@ -15,3 +15,5 @@ A tool, e.g., should be tied to (at least) one such reason, as well as convey it
 - `Done`
     - It's not clear how I want to define this, and its existence is currently pending
         - Alternatives might be: "Have done", "Looked into", "Reached an obstacle", etc.
+
+![Laroy Radar](laroy_radar.png)
