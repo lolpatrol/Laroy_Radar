@@ -18,6 +18,8 @@ A tool, e.g., should be tied to (at least) one such reason, as well as convey it
 
 ![Laroy Radar](laroy_radar.png)
 
+Here the orange rectangles represents **_reasons_** (or a **_topic_**) for looking into something.
+
 ---
 
 ## Current and Past Explorations
