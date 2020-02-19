@@ -22,7 +22,7 @@ Here the orange rectangles represents **_reasons_** (or a **_topic_**) for looki
 
 ---
 
-## Current and Past Explorations
+## Current, Ongoing, and Past Explorations
 
 ### [PipelinePlayground](https://github.com/lolpatrol/PipelinePlayground)
 - Reasons: `CI`, `CD`, `Pipeline`
@@ -31,6 +31,13 @@ Here the orange rectangles represents **_reasons_** (or a **_topic_**) for looki
 
 Setting up Jenkins in Docker, using Docker in Jenkins to build things, and trigger builds from git-hooks.
 
+#### What next?
+
+- Vault, maybe
+- Larger scale, more in-depth
+- Deployments
+
+---
 
 ### [git2trello](google.com)
 - Reasons: `Traceability`, `git-hooks`
@@ -40,5 +47,10 @@ Setting up Jenkins in Docker, using Docker in Jenkins to build things, and trigg
 Forcing traceability between a commit and a task/issue into workflow by prompting a user to choose an issue from 
 a Trello board, adding GitHub-URL of the commit to the task/issue as a comment, and adding the task/issue-URL 
 to the commit message.
+
+#### What next?
+
+- This traceability covers very little, maybe look into how to preserve traceability for other things, in other ways
+and how to determine the granularity of the traceability.
 
 
