@@ -11,3 +11,5 @@ GitLab:tool:CI,CD
 Bamboo:tool:-
 TeamCity:tool:-
 Artefactory:tool:-
+Jira:tool:Issue Tracking,Traceability
+Vault:tool:Secrets

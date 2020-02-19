@@ -17,3 +17,26 @@ A tool, e.g., should be tied to (at least) one such reason, as well as convey it
         - Alternatives might be: "Have done", "Looked into", "Reached an obstacle", etc.
 
 ![Laroy Radar](laroy_radar.png)
+
+---
+
+## Current and Past Explorations
+
+### [PipelinePlayground](https://github.com/lolpatrol/PipelinePlayground)
+- Reasons: `CI`, `CD`, `Pipeline`
+
+- Using: `Jenkins`, `Git`, `Docker`
+
+Setting up Jenkins in Docker, using Docker in Jenkins to build things, and trigger builds from git-hooks.
+
+
+### [git2trello](google.com)
+- Reasons: `Traceability`, `git-hooks`
+
+- Using: `Git`,`Trello`, `Python`
+
+Forcing traceability between a commit and a task/issue into workflow by prompting a user to choose an issue from 
+a Trello board, adding GitHub-URL of the commit to the task/issue as a comment, and adding the task/issue-URL 
+to the commit message.
+
+

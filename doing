@@ -1,3 +1,4 @@
 Jenkins:tool:CI,CD
 Docker:tool:-
-Git:tool:VC
+Git:tool:VC,Traceability,git-hooks
+Trello:tool:Issue Tracking,Traceability

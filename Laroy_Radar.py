@@ -25,6 +25,7 @@ def get_nodes():
 
 
 g = graphviz.Digraph("G", engine='fdp')  # circo => nice circular thingy
+g.attr(rankdir='LR', size='12')
 nodes = get_nodes()
 reasons = set()
 
@@ -37,7 +38,7 @@ with g.subgraph(name="cluster_todo") as c:
             for re in r:
                 reasons.add((re, n))
         c.node(n)
-    c.attr(label='TODO')
+    c.attr(label='TODO')  # No labels with engine='circo', also subgraphs don't seem to work here either (to collect)
 
 with g.subgraph(name='cluster_doing') as d:
     d.attr(color='blue')
@@ -65,10 +66,14 @@ with g.subgraph(name="cluster_done") as e:
         e.node(":(")
     e.attr(label='Done')
 
+r = list(set([p[0] for p in reasons]))
+for item in r:
+    g.node(item, style='filled', shape='rectangular', color='orange')
+for i in range(len(r)-1):
+        g.edge(r[i], r[i+1], style='invis', rank='same')
 for pair in reasons:
-    g.node(pair[0], shape='rectangle')
     g.edge(pair[0], pair[1])
 
-
+g.render(filename='laroy_radar', format='png')
 g.view()
 
